@@ -1,0 +1,19 @@
+int maximumones(vector<int>&nums)
+{
+int sz=nums.size();
+int local cnt=0,global max=0;
+for(int i=0;i<sz;i++)
+{
+if(nums[i]==1)
+{
+local cnt++;
+}
+else
+{
+global max=max(global max,local cnt);
+local cnt=0;
+}
+return global max;
+}
+
+}
