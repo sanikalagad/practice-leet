@@ -1,0 +1,9 @@
+w=0;
+for(int read=0;read<sz;read++)
+  {
+  if(n[read]==val)
+    continue;
+  n[w]=n[read];
+  w++;
+  }
+return w;
