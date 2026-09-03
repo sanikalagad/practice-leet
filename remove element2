@@ -1,0 +1,24 @@
+int sz=nums.size();
+int r=0,w=0;
+for(w=0;w<sz;w++)
+{
+if(nums[w]==val)
+{
+for(r=w+1;r<sz;r++)
+{
+if(nums[r]!=val)
+{
+swap(nums[w],nums[r]);
+break;
+}
+}
+}
+int k=0;
+for(int i=0;i<sz;i++)
+{
+if(nums[i]!=val)
+k++;
+else
+break;
+}
+}
