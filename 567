@@ -1,0 +1,8 @@
+list node*s=head;
+list node*f=head;
+while(fast!=NULL&&fast->next!=NULL)
+{
+s=s->next;
+f=f->next->next;
+}
+return s;
